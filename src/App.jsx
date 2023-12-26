@@ -19,6 +19,7 @@ function App() {
         <Route path="/about" element={<About/>}>  </Route>
         <Route path="*" element={<p>Not Found</p>}></Route>
         <Route path="/products/:id" element={<ProductDetail/>}></Route>
+        
       </Routes>
     </BrowserRouter>
     </>
