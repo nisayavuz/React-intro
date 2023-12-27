@@ -20,19 +20,20 @@ export default function ProductDetail() {
 
 
   return (
+    <div className="container">
     <div className="card" style={{ width: 25 + "rem" }}>
-      {id}
       <img src={`https://i.dummyjson.com/data/products/${id}/2.jpg`} className="card-img-top" alt="..." />
       <div className="card-body">
-        <h5 className="card-title"> Card title {productDetail.title}</h5>
-        <p className="card-text">Card title{productDetail.description}</p>
-        <p className="card-text"> Card title {productDetail.price}</p>
-        <p className="card-text"> Card title {productDetail.rating}</p>
+        <h5 className="card-title">{productDetail.title}</h5>
+        <p className="card-text">{productDetail.description}</p>
+        <p className="card-text">Price: {productDetail.price}$</p>
+        <p className="card-text">Rating: {productDetail.rating} ⭐</p>
 
         <a href="#" className="btn btn-primary">
           Add to Cart
         </a>
       </div>
+    </div>
     </div>
   );
 }

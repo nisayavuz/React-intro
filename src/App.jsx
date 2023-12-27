@@ -5,6 +5,7 @@ import Homepage from "./pages/Homepage/Homepage";
 import About from "./pages/About/About";
 import Navbar from "./components/Navbar/Navbar";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
+import ProductAdd from "./components/ProductAdd/ProductAdd";
 
 //Javascript xml
 //JSX => Javascript + HTML
@@ -19,7 +20,7 @@ function App() {
         <Route path="/about" element={<About/>}>  </Route>
         <Route path="*" element={<p>Not Found</p>}></Route>
         <Route path="/products/:id" element={<ProductDetail/>}></Route>
-        
+        <Route path="/addproduct" element={<ProductAdd/>}></Route>
       </Routes>
     </BrowserRouter>
     </>
